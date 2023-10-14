@@ -25,7 +25,6 @@ class Doctors {
   String box;
   // ignore: non_constant_identifier_names
   String Description;
-
   bool isOpen;
 
   Doctors(
@@ -44,36 +43,36 @@ var doctors = [
       image: 'img-men-01.png',
       name: 'Dr. Gilang Segara Bening',
       assigned: 'Heart  ·  Persahabatan Hospital',
-      reviewNum: '(1221)',
+      reviewNum: '1221',
       Description:
           ' dr. Gilang is one of the best doctors in the Persahabatan Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule. ',
-      //box: 'Btn_Open.png',
+      box: 'Btn_Open.png',
       isOpen: true),
   Doctors(
       image: 'img-women-02.png',
       name: 'Dr. Shabil Chan',
       assigned: 'Dental  ·  Columbia Asia Hospital',
-      reviewNum: '(964)',
+      reviewNum: '964',
       Description:
           ' Dr. Shabil Chan is one of the best doctors in the Columbia Asia Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.',
-      //box: 'Btn_Open.png',
+      box: 'Btn_Open.png',
       isOpen: true),
   Doctors(
       image: 'img-men-02.png',
-      name: 'dr. Mustakim',
+      name: 'Dr. Mustakim',
       assigned: 'Eye  ·  Salemba Carolus Hospital',
-      reviewNum: '(762)',
+      reviewNum: '762',
       Description:
           ' Dr. Mustakim is one of the best doctors in the Salemba Carolus Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.',
-      //box: 'Btn_Closed.png',
+      box: 'Btn_Closed.png',
       isOpen: true),
   Doctors(
       image: 'img-women-02.png',
       name: 'Dr. Suprihatini',
       assigned: 'Heart  ·  Salemba Carolus Hospital',
-      reviewNum: '(762)',
+      reviewNum: '762',
       Description:
-          ' Dr. Mustakim is one of the best doctors in the Salemba Carolus Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.',
-      //box: 'Btn_Closed.png',
+          ' Dr. Suprihatini is one of the best doctors in the Salemba Carolus Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.',
+      box: 'Btn_Closed.png',
       isOpen: true),
 ];

@@ -110,7 +110,7 @@ class DoctorScreen extends StatelessWidget {
                 Text(
                   args.Description,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 5,
+                  maxLines: 6,
                   style: GoogleFonts.sourceSans3(
                       color: const Color(0xFFC4C4C4),
                       //letterSpacing: 0.5,
@@ -121,133 +121,142 @@ class DoctorScreen extends StatelessWidget {
                 const SizedBox(
                   height: 16,
                 ),
-                const Spacer(),
-                IntrinsicHeight(
+                //const Spacer(),
+                Container(
+                  height: 72,
+                  width: 320,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Column(
+                      const SizedBox(
+                        width: 45,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            'Experience',
-                            style: GoogleFonts.lato(
-                              color: const Color(0xFF25282B),
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              letterSpacing: 0.5,
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                          Column(
                             children: [
                               Text(
-                                '3',
-                                style: GoogleFonts.sourceSans3(
-                                    color: const Color(0xFF2B92E4),
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.normal),
+                                'Experience',
+                                style: GoogleFonts.lato(
+                                  color: const Color(0xFF25282B),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
                               ),
                               const SizedBox(
-                                width: 4,
+                                height: 8,
                               ),
-                              Text(
-                                'yr',
-                                style: GoogleFonts.sourceSans3(
-                                    color: const Color(0xFFAAAAAA),
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    '3',
+                                    style: GoogleFonts.sourceSans3(
+                                        //height: 36,
+                                        color: const Color(0xFF2B92E4),
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                  const SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    'yr',
+                                    style: GoogleFonts.sourceSans3(
+                                        color: const Color(0xFFAAAAAA),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  )
+                                ],
                               )
                             ],
-                          )
-                        ],
-                      ),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      const VerticalDivider(
-                        thickness: 1,
-                        color: Color(0xFFEAEAEA),
-                      ),
-                      Column(
-                        children: [
-                          Text(
-                            'Patient',
-                            style: GoogleFonts.lato(
-                              color: const Color(0xFF25282B),
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              letterSpacing: 0.5,
-                            ),
                           ),
                           const SizedBox(
-                            height: 8,
+                            width: 8,
                           ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                          const VerticalDivider(
+                            thickness: 1,
+                            color: Color(0xFFEAEAEA),
+                          ),
+                          Column(
                             children: [
                               Text(
-                                args.reviewNum,
-                                style: GoogleFonts.sourceSans3(
-                                    color: const Color(0xFF2B92E4),
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.normal),
+                                'Patient',
+                                style: GoogleFonts.lato(
+                                  color: const Color(0xFF25282B),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                  letterSpacing: 0.5,
+                                ),
                               ),
                               const SizedBox(
-                                width: 4,
+                                height: 8,
                               ),
-                              Text(
-                                'ps',
-                                style: GoogleFonts.sourceSans3(
-                                    color: const Color(0xFFAAAAAA),
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    args.reviewNum,
+                                    style: GoogleFonts.sourceSans3(
+                                        color: const Color(0xFF2B92E4),
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                  const SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    'ps',
+                                    style: GoogleFonts.sourceSans3(
+                                        color: const Color(0xFFAAAAAA),
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.normal),
+                                  )
+                                ],
                               )
                             ],
-                          )
-                        ],
-                      ),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      const VerticalDivider(
-                        thickness: 1,
-                        color: Color(0xFFEAEAEA),
-                      ),
-                      Column(
-                        children: [
-                          Text(
-                            'Rating',
-                            style: GoogleFonts.lato(
-                              color: const Color(0xFF25282B),
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              letterSpacing: 0.5,
-                            ),
                           ),
                           const SizedBox(
-                            height: 8,
+                            width: 8,
                           ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                          const VerticalDivider(
+                            thickness: 1,
+                            color: Color(0xFFEAEAEA),
+                          ),
+                          Column(
                             children: [
                               Text(
-                                '5.0',
-                                style: GoogleFonts.sourceSans3(
-                                    color: const Color(0xFF2B92E4),
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.normal),
+                                'Rating',
+                                style: GoogleFonts.lato(
+                                  color: const Color(0xFF25282B),
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                  letterSpacing: 0.5,
+                                ),
                               ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    '5.0',
+                                    style: GoogleFonts.sourceSans3(
+                                        color: const Color(0xFF2B92E4),
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                ],
+                              )
                             ],
-                          )
+                          ),
                         ],
-                      ),
+                      )
                     ],
                   ),
                 ),
-                const Spacer(),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -256,7 +265,7 @@ class DoctorScreen extends StatelessWidget {
                       width: 56,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.blue,
+                        color: const Color(0xFF4485FD),
                         image: const DecorationImage(
                           image: Svg(
                             'assets/icons/icon-chat.svg',
@@ -276,19 +285,14 @@ class DoctorScreen extends StatelessWidget {
                       width: MediaQuery.of(context).size.width - 104,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.green,
+                        color: const Color(0xFF00CC6A),
                       ),
                       child: Center(
-                        child: Text(
-                          'Make an Appoinment',
-                          style: Theme.of(context)
-                              .textTheme
-                              .headlineSmall!
-                              .copyWith(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w700,
-                              ),
-                        ),
+                        child: Text('Make an Appoinment',
+                            style: GoogleFonts.lato(
+                                color: const Color(0xFFF9F9FA),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14)),
                       ),
                     ),
                   ],

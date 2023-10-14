@@ -106,7 +106,7 @@ class DoctorList extends StatelessWidget {
                                           width: 4,
                                         ),
                                         Text(
-                                          doctors[index].reviewNum,
+                                          '(${doctors[index].reviewNum})',
                                           style: const TextStyle(
                                               color: Color(0xFFC4C4C4)),
                                         ),
@@ -114,9 +114,8 @@ class DoctorList extends StatelessWidget {
                                     )),
                                 const SizedBox(width: 10),
                                 Image(
-                                    image: AssetImage(doctors[index].isOpen
-                                        ? 'assets/images/Btn_open.png'
-                                        : 'assets/images/Btn_Closed.png'))
+                                    image: AssetImage(
+                                        'assets/images/${doctors[index].box}'))
                               ],
                             ),
                           ),
